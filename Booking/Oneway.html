@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Oneway Flights</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<img src="icon.png" class="homeicon">
+<span class="hometitle">EyePlane</span><br><br><hr>
+<fieldset class="flight">
+    <legend><h2 style="font-family: 'lora'">Flights</h2></legend>
+            <div >
+               <div class="btn">
+                    <a href="Roundtrip.html" id="rt"><span id="rt">Roundtrip</span></a> |
+                    <span id="ow">One-way</span></a>
+                    <hr>
+                </div>
+                <table>
+                        <thead>
+                            <tr>
+                                <th style="color: grey">Flying from</th>
+                                <th style="color: grey">Flying to</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td ><select name="from" placeholder="Flying from" class="flybox">
+                                        <option value="1">Manila</option>
+                                        <option value="2">Singapore</option>
+                                        <option value="3">Japan</option>
+                                        <option value="4">Los Angeles, California</option>
+                                    </select></td>
+                                <td ><select name="from" placeholder="Flying from" class="flybox">
+                                        <option value="1">Singapore</option>
+                                        <option value="2">Manila</option>
+                                        <option value="3">Japan</option>
+                                        <option value="4">Los Angeles, California</option>
+                                    </select></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <span class="left">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="color: grey">Date of Departing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="date" id="datedepart" class="flybox"></td>
+                                </tr>
+                    </span>
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th style="color: grey">Travelers</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td >Adults: &nbsp;<input type="number" id="Adults" class="trav"></td>
+                                        <td >Youth: &nbsp;<input type="number" id="Youth" class="trav"></td>
+                                        <td >Kids: &nbsp;<input type="number" id="Kids" class="trav"></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+
+                            <h4 style="color: grey">Preferred Class:</h4>
+                            <select name="pref-class" class="flybox">
+                                    <option value="1">Economy</option>
+                                    <option value="2">Premium Economy</option>
+                                    <option value="3">Business</option>
+                                    <option value="4">First Class</option>
+                                </select>
+            </div><br><hr><br>
+
+            <div class="centersubmit">
+                    <a href="selectflight.html"><input type="submit" id="search" value="Search"></a> 
+                </div>
+        </fieldset>
+
+</body>
+
+</html>
